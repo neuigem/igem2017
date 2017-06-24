@@ -1,0 +1,31 @@
+{
+  "name": "igem",
+  "version": "0.0.1",
+  "description": "http://2017.igem.org/wiki/index.php?title=Team:NortheasternU-Boston",
+  "main": "app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blahoink/igem.git"
+  },
+  "author": "Albert Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blahoink/igem/issues"
+  },
+  "homepage": "https://github.com/blahoink/igem#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-file-include": "^1.1.0",
+    "gulp-less": "^3.3.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "tiny-lr": "^1.0.5"
+  }
+}
