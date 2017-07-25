@@ -4,3 +4,7 @@
 # node files
 node_modules/**/*
 node_modules
+
+# generated files
+css/*.css
+views/*.html

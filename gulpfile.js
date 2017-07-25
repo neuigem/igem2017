@@ -15,21 +15,23 @@ var gulp = require('gulp'),
 
 var paths = {
   templates: './templates/',
-  sass: 'css/source/'
+  sass: './css/source/'
 };
 
 // fileinclude: grab partials from templates and render out html files
 // ==========================================
 gulp.task('fileinclude', function() {
   return gulp.src(path.join(paths.templates, '*.tpl.html'))
-    .pipe(fileinclude())
+    .pipe(fileinclude({
+      basepath: path.join(__dirname, 'views')
+    }))
     .pipe(rename({
       extname: ""
      }))
     .pipe(rename({
       extname: ".html"
      }))
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./views/'))
     .pipe(livereload(server))
 });
 
@@ -48,7 +50,7 @@ gulp.task('sass', function() {
 gulp.task('connect', function() {
 	connect.server({
 	  port: 1337,
-	  root: [__dirname],
+	  root: [path.join(__dirname, 'views')],
 	  livereload: true
 	});
 });
