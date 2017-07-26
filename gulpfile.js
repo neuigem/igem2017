@@ -6,11 +6,9 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
-    lr = require('tiny-lr'),
     connect = require('gulp-connect'),
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
-    server = lr(),
     path = require("path");
 
 var paths = {
@@ -23,7 +21,7 @@ var paths = {
 gulp.task('fileinclude', function() {
   return gulp.src(path.join(paths.templates, '*.tpl.html'))
     .pipe(fileinclude({
-      basepath: path.join(__dirname, 'views')
+      basepath: path.join(__dirname, 'templates')
     }))
     .pipe(rename({
       extname: ""
@@ -31,8 +29,9 @@ gulp.task('fileinclude', function() {
     .pipe(rename({
       extname: ".html"
      }))
-    .pipe(gulp.dest('./views/'))
-    .pipe(livereload(server))
+    .pipe(gulp.dest('./public/'))
+    .pipe(livereload())
+    .on('error', onWarning);
 });
 
 //  Sass: compile sass to css task - uses Libsass
@@ -41,8 +40,9 @@ gulp.task('sass', function() {
   return gulp.src(path.join(paths.sass, '*.scss'))
     .pipe(sass({ style: 'expanded', sourceComments: 'map', errLogToConsole: true}))
     .pipe(autoprefixer('last 2 version', "> 1%", 'ie 8', 'ie 9'))
-    .pipe(gulp.dest('css'))
-    .pipe(livereload(server))
+    .pipe(gulp.dest('public/css'))
+    .pipe(livereload())
+    .on('error', onWarning);
 });
 
 //  Connect: sever task
@@ -50,14 +50,14 @@ gulp.task('sass', function() {
 gulp.task('connect', function() {
 	connect.server({
 	  port: 1337,
-	  root: [path.join(__dirname, 'views')],
+	  root: [path.join(__dirname, 'public')],
 	  livereload: true
 	});
 });
 
 function watchStuff(task) {
   // Listen on port 35729
-  server.listen(35729, function (err) {
+  livereload.listen(35729, function (err) {
     if (err) {
       return console.error(err)
       //TODO use notify to log a message on Sass compile fail and Beep
@@ -75,7 +75,6 @@ function watchStuff(task) {
 //  Watch and Livereload using Libsass
 //===========================================
 gulp.task('watch', function() {
-
  watchStuff('sass');
 
 });
@@ -87,3 +86,15 @@ gulp.task('watch', function() {
 gulp.task('default', ['fileinclude', 'sass', 'connect', 'watch'], function() {
 
 });
+
+
+// error handling
+function handleError(level, error) {
+   gutil.log(error.message);
+   if (isFatal(level)) {
+      process.exit(1);
+   }
+}
+
+function onError(error) { handleError.call(this, 'error', error);}
+function onWarning(error) { handleError.call(this, 'warning', error);}

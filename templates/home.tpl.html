@@ -1,6 +1,14 @@
 <html lang="en" dir="ltr" class="client-js">
 <head>
-
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css"  href="../css/sidebar.css" >
+	<link rel="stylesheet" type="text/css"  href="../css/home.css" >
+	<link rel="stylesheet" type="text/css"  href="../css/navbar.css" >
 </head>
 <body>
 	<div id="global-wrapper">
@@ -29,8 +37,30 @@
 							<meta name="viewport" content="width=device-width, initial-scale=1">
 						</p>
 
-						@@include('./sidebar.html')
+						@@include('./sidebar.tpl.html')
+
 						<div class="igem_2017_content_wrapper">
+							<!-- START EDITING HERE -->
+
+							<div class="container neu-wrapper">
+
+								<div class="row jumbo">
+									<div class="col-sm-4 home-sidebar">
+
+										<ul class="nav nav-pills">
+										  <li role="presentation" class="active"><a href="#">Home</a></li>
+										  <li role="presentation"><a href="#">Profile</a></li>
+										  <li role="presentation"><a href="#">Messages</a></li>
+										</ul>
+
+									</div>
+									<div class="col-sm-8 home-abstract">
+										<div class="abstract-img-container">
+											<img src='img/abstract@4x.png'>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="visualClear"></div>
 					</div>

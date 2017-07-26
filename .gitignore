@@ -6,5 +6,6 @@ node_modules/**/*
 node_modules
 
 # generated files
-css/*.css
-views/*.html
+public/css/*.css
+public/*.html
+
