@@ -1,33 +1,21 @@
-div#mw-content-text.mw-content-ltr {
-  width:100%;
-  height:100%;
-  p {
-    display: none;
-  }
-  .igem_2017_content_wrapper {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: relative;
-  }
+@import "./global.scss";
+
+
+.igem_2017_content_wrapper {
+
 }
 
 // all of our home page goes in here
 div.neu-wrapper {
   margin-left: 0;
   margin-right: 0;
-  padding: 0 0;
+  //padding: 0 0;
   width: 100%;
-  height: 450px;
+  //min-height: 450px;
   .row.jumbo {
-    height: 100%;
+    //height: 100%;
   }
 
-  // sidebar with links, logo, etc.
-  .home-sidebar {
-    background-color: rgba(0,0,0,0.5);
-    height: 100%;
-  }
   // graphical abstract
   .home-abstract {
     .abstract-img-container {

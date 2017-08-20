@@ -1,0 +1,49 @@
+@import 'global.scss';
+
+.neu-igem-footer {
+  background-color: #333;
+  //min-height: 100px;
+  .neusponsor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 30px;
+    .neusponsor-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      span.neusponsor-title {
+        color: #FFF;
+        font-size: 1.5em;
+      }
+    }
+    hr {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-color: rgba(255,255,255,0.25);
+      border-style: dashed;
+      width: 100%;
+    }
+    ul.neusponsor-list {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      li.neusponsor-item {
+        margin: 5px 10px;
+        .neusponsor-item-link {
+          padding: 10px;
+          &:hover, &:active {
+            background-color: lighten(#333, 10%);
+          }
+          img.neusponsor-img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,41 +1,124 @@
+@import 'global.scss';
 
-/***************************************************** DEFAULT WIKI SETTINGS  ****************************************************/
+// sidebar with links, logo, etc.
+.home-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  background-color: $c_blue;
+  min-height: 100%;
+  box-shadow: $shadow_horz;
+  //padding-right: 0px;
 
-	/* Clear the default wiki settings */
+  .neu-logo-row {
+    padding: 0px;
+    background-color: #FFF;
+    .neu-logo-link-container {
+      padding: 15px 15px;
+      a.neu-logo-link {
+        position: relative;
+        width: 100%;
+        img.neu-logo-img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 
-	#home_logo, #sideMenu { display:none; }
-	#sideMenu, #top_title, .patrollink  {display:none;}
-	#content { width:100%; padding:0px;  margin-top:-7px; margin-left:0px;}
-	body {background-color:white; }
-	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+  .banner-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 15px;
+    span.banner-title {
+      color: #FFF;
+      font-size: 2em;
+    }
+    span.banner-subtitle {
+      color: #FFF;
+      font-size: 1.25em;
+    }
+  }
 
+  .sidebar-links {
+    padding: 0px;
+    .panel-group {
+      margin-bottom: 10px;
+      border-top: 1px dashed lighten($c_blue, 10%);
+      .panel, .panel-default {
+        border-radius: 0px;
+        //background-color: rgba(255,255,255,0.1);
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px dashed lighten($c_blue, 10%);
+        margin-top: 0px;
+        .panel-collapse {
+          &.collapse.in, &.collapsing {
+            background-color: rgba(255,255,255,0.1);
+          }
+        }
+        .panel-heading {
+          padding: 0;
+          background-color: transparent;
+          border: none;
+          h4.panel-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            a {
+              width: 100%;
+              padding: 10px 15px;
+              color: #EEE;
+              &:hover, &:active {
+                background-color: #FFF;
+                color: $c_blue;
+              }
+            }
+          }
+        }
+        ul.panel-body {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          list-style: none;
+          padding: 0px 0px;
+          border-top: 1px solid rgba(255,255,255,0.1);
+          li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            :last-child {
+              border: none;
+            }
+            a {
+              width: 100%;
+              padding: 10px 20px;
+              color: #EEE;
+              &:hover, &:focus {
+                background-color: #EEE;
+                color: $c_blue;
+              }
+            }
+          }
 
+        }
+      }
 
+    }
+  }
 
-/**************************************************************** MENU ***************************************************************/
-	/* Wrapper for the menu */
-	.igem_2017_menu_wrapper {
-		display: none;
-	}
-	/* styling for the menu button when it is the current page */
-	 .current_page {
-		background-color:#7fc1f7  !important;
-		color:#5e5f5f !important;
-	}
+  .spacer {
+    flex: 1;
+  }
 
-/***************************************************** CONTENT OF THE PAGE ****************************************************/
+  .sidebar-footer {
+    padding: 10px 15px;
+    color: #EEE;
+  }
 
-	/* Wrapper for the content */
-	.igem_2017_content_wrapper {
-		
-	}
-
-
-	/* special class that the system uses to make sure the team wants a page to be evaluated */
-	.judges-will-not-evaluate {
-    	width: 96.6%;
-  		margin: 5px 15px;
-  		display: block;
-		border: 4px solid #3399ff;
-    	font-weight: bold;
-	}
+}

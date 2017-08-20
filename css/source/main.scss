@@ -1,0 +1,50 @@
+// MASTER FILE
+
+
+@import 'global.scss';
+@import 'home.scss';
+@import 'sidebar.scss';
+@import 'footer.scss';
+
+
+
+/***************************************************** DEFAULT WIKI SETTINGS  ****************************************************/
+
+	/* Clear the default wiki settings */
+
+	#home_logo, #sideMenu { display:none; }
+	#sideMenu, #top_title, .patrollink  {display:none;}
+	#content { width:100%; padding:0px;  margin-top:-7px; margin-left:0px;}
+	body {background-color:white; }
+	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+
+
+
+
+/**************************************************************** MENU ***************************************************************/
+	/* Wrapper for the menu */
+	.igem_2017_menu_wrapper {
+		display: none;
+	}
+	/* styling for the menu button when it is the current page */
+	 .current_page {
+		background-color:#7fc1f7  !important;
+		color:#5e5f5f !important;
+	}
+
+/***************************************************** CONTENT OF THE PAGE ****************************************************/
+
+	/* Wrapper for the content */
+	.igem_2017_content_wrapper {
+
+	}
+
+
+	/* special class that the system uses to make sure the team wants a page to be evaluated */
+	.judges-will-not-evaluate {
+    	width: 96.6%;
+  		margin: 5px 15px;
+  		display: block;
+		border: 4px solid #3399ff;
+    	font-weight: bold;
+	}

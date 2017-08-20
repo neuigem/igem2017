@@ -38,7 +38,7 @@ gulp.task('fileinclude', function() {
 //===========================================
 gulp.task('sass', function() {
   return gulp.src(path.join(paths.sass, '*.scss'))
-    .pipe(sass({ style: 'expanded', sourceComments: 'map', errLogToConsole: true}))
+    .pipe(sass({ style: 'expanded', sourceComments: 'map', errLogToConsole: true}).on('error', sass.logError))
     .pipe(autoprefixer('last 2 version', "> 1%", 'ie 8', 'ie 9'))
     .pipe(gulp.dest('public/css'))
     .pipe(livereload())
