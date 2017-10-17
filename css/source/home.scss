@@ -14,6 +14,10 @@ div.neu-wrapper {
   //min-height: 450px;
   .row.jumbo {
     //height: 100%;
+    .no-float {
+      display: table-cell;
+      float: none;
+    }
   }
 
   // graphical abstract

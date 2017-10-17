@@ -7,7 +7,6 @@
 @import 'footer.scss';
 
 
-
 /***************************************************** DEFAULT WIKI SETTINGS  ****************************************************/
 
 	/* Clear the default wiki settings */
@@ -36,8 +35,14 @@
 
 	/* Wrapper for the content */
 	.igem_2017_content_wrapper {
-
+    width: auto !important;
+    margin: 0 !important;
+    float: none !important;
+    font-size: 0.75em;
 	}
+  h1 {
+    display: none !important;
+  }
 
 
 	/* special class that the system uses to make sure the team wants a page to be evaluated */
@@ -48,3 +53,7 @@
 		border: 4px solid #3399ff;
     	font-weight: bold;
 	}
+
+  p {
+    margin: 0;
+  }
