@@ -1,0 +1,70 @@
+<html lang="en" dir="ltr" class="client-js">
+@@include('./head.tpl.html')
+<body>
+  <div class="igem_2017_content_wrapper">
+    <!-- START EDITING HERE -->
+
+    <div class="container neu-wrapper">
+
+      <div class="basic-page row jumbo">
+        @@include('./sidebar.tpl.html')
+        <div class="col-sm-9">
+          <div class="header">
+            <h1>Project Design</h1>
+          </div>
+          <div class="content-text">
+<h3>Expression without Cloning!</h3>
+<p>
+A key advantage of cell-free systems is that they allow expression directly
+from linear amplified DNA rather than from a bacterial plasmid. This enabled
+our overall part design scheme of  IDT synthesized G-blocks containing each
+of our AMPs between our desired 5’UTR and Terminator, allowing us to express
+these AMPs after a single round of PCR with overhanging primers containing
+promoter regions. This schema allowed us to test numerous AMPs as well as GFP
+and methionine aminopeptidase under the control of two promoters without
+having to go through the time consuming process of cloning a bacterial plasmid
+for each expression construct.
+</p>
+
+<p>
+This allows for an extremely iterative design process where a part can be conceived of,
+a G-block synthesized, a PCR amplification performed, and a part tested in a
+cell-free expression system within a matter of two weeks.
+</p>
+
+<img src="http://2017.igem.org/wiki/images/c/c2/T--NortheasternU-Boston--DesignBlocks.png"
+width="95%" style="max-width:100%;margin:10px"></img>
+
+
+<h3>Experimental Plans</h3>
+<p>
+We set out to answer key questions concerning what level of complexity of AMP
+could be produced in our cell-free system. We also wanted to discover whether
+or not we could rescue AMP function through treatment with methionine aminopeptidase
+in the case where a non-canonical N-terminal methionine was added to the peptide
+as a start codon for expression. AMP effectivity is gauged via bacterial killing
+effectivity measured by OD600 growth curves or various other assays.
+Our experimental design would then be to test our panel of AMPs across promoters
+and in the presence or absence of methionine aminopeptidase also produced via
+cell-free reactions. Pardee 2016 reported that the AMPs that they produced in
+cell-free reactions were equally viable in purified and unpurified form, therefore
+purification was a step that we avoided in order to create a streamlined workflow
+directly from synthesis to amplification to expression to characterization.
+</p>
+
+<h3>Citations</h3>
+<ul>
+  <li>
+    <p>
+Pardee, K., Slomovic, S., Nguyen, P. Q., Lee, J. W., Donghia, N., Burrill, D., . . . Collins, J. J. (2016). Portable, On-Demand Biomolecular Manufacturing. Cell, 167(1), 248-259.e212. doi:<a href="https://doi.org/10.1016/j.cell.2016.09.013" target="_blank">https://doi.org/10.1016/j.cell.2016.09.013</a>
+<a href="http://www.sciencedirect.com.ezproxy.neu.edu/science/article/pii/S0092867416312466" target="_blank">http://www.sciencedirect.com.ezproxy.neu.edu/science/article/pii/S0092867416312466</a>
+    </p>
+  </li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('./footer.tpl.html')
+  </div>
+</body>

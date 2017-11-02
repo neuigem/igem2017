@@ -1,11 +1,16 @@
+html {
+  //font-size: 14px;
+}
 body {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+  //font-size: 14px;
+  font-size: 10px;
   line-height: 1.42857143;
   color: #333;
   padding: 0px;
   margin: 0px;
   min-height: 100vh;
+  background-color: #EEE;
 }
 
 $c_blue: #225378;

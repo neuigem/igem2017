@@ -1,0 +1,13 @@
+@import 'global.scss';
+
+.results-page {
+  figure {
+    padding: 20px 10px;
+    img {
+      width: 100%;
+    }
+    figcaption {
+      padding: 5px 10px;
+    }
+  }
+}

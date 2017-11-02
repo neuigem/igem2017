@@ -1,0 +1,204 @@
+<html lang="en" dir="ltr" class="client-js">
+@@include('./head.tpl.html')
+<body>
+  <div class="igem_2017_content_wrapper">
+    <!-- START EDITING HERE -->
+
+    <div class="container neu-wrapper">
+
+      <div class="basic-page results-page row jumbo">
+        @@include('./sidebar.tpl.html')
+        <div class="col-sm-9">
+          <div class="header">
+            <h1>Results</h1>
+          </div>
+
+          <div class="content-text">
+<h3>GFP Expression in Cells</h3>
+<p>
+To verify that our DNA schema was appropriate for expression with the T7 promoter
+we decided to validate it with an easy phenotypic readout: GFP in T7 express competent <i>E. coli.</i></p>
+<img src="http://2017.igem.org/wiki/images/6/61/T--NortheasternU-Boston--GFPKit1.png"
+style="height:300px;display:block;margin:10px;"></img>
+<p>
+Successful expression of GFP in our DNA system in T7 express E. coli under the long promoter
+(<a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_I712074" target="_blank">BBa_I712074</a>)
+with the 5’UTR
+(<a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K1758100" target="_blank">BBa_K1758100</a>)
+superfolder GFP
+(<a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_I746916" target="_blank">BBa_I746916</a>)
+and Terminator
+(<a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_B0012" target="_blank">BBa_B0012</a>)
+in pSB1C3 vector.
+The same DNA sequence but as a linear PCR amplicon was expressed using NEBs PURExpress kit
+</p>
+<img src="http://2017.igem.org/wiki/images/9/9e/T--NortheasternU-Boston--GFPKit2.png"
+style="height:300px;display:block;margin:10px;"></img>
+
+<h3>Bacterial Killing Assay by OD600</h3>
+<figure>
+  <img src="http://2017.igem.org/wiki/images/0/0a/T--NortheasternU-Boston--ResultsFig1.png"></img>
+  <figcaption>
+    <b>Figure 1:</b> The OD of liquid cultures at 600nm over time in the presence
+    of cell-free AMP reactions. <b>L</b> and <b>S</b> indicate the long
+    (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_I712074">BBa_I712074</a>)
+    and short promoter
+    (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_I719005">BBa_I719005</a>),
+    respectively. “MetAP” indicates that methionine aminopeptidase
+    (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431025">BBa_K2431025</a>)
+    was present in the reaction. The control reaction contained all components of
+    the cell-free reaction except for input DNA. Error bars shown are 95% confidence intervals, n=4.
+  </figcaption>
+</figure>
+<figure>
+  <img src="http://2017.igem.org/wiki/images/e/ea/T--NortheasternU-Boston--ResultsFig2.png"></img>
+  <figcaption>
+    <b>Figure 2:</b> The OD of liquid cultures at 600nm over time in the presence of ISGCock
+    (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431022">BBa_K2431022</a>) ,
+    BP100 (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431002">BBa_K2431002</a>) ,
+    and Micrococcin (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431000">BBa_K2431000</a>)
+    AMPs. <b>L</b> and <b>S</b> indicate the long
+    (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_I712074">BBa_I712074</a>)
+    and short promoter (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_I719005">BBa_I719005</a>),
+    respectively. “MetAP” indicates that methionine aminopeptidase
+    (<a target="_blank" href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431025">BBa_K2431025</a>)
+    was present in the reaction. The control reaction “Control average” contained
+    all components of the cell-free reaction except for input DNA. Error bars
+    shown are 95% confidence intervals, n=6. The reaction “MetAP Control Average”
+    contained all components of the cell-free reaction as well as MetAP DNA.
+    The reaction “Cells Only Control” contained only media and cells.
+  </figcaption>
+</figure>
+
+<p>
+In the first attempt of the killing assay, we tested all twelve of our AMPs
+under both long and short promoters and in the presence of MetAP.
+The goal of this broader assay was to identify which AMP’s under which configuration
+were effective. Most of the AMPs under all configurations had OD’s within range
+of the 95% confidence interval of the control reaction. This control reaction
+contained cell-free buffer and water at the same volume as the AMP reaction in
+order to account for toxicity. However,
+ISGCock (<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431022">BBa_K2431022</a>),
+BP100 (<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431002">BBa_K2431002</a>),
+and Micrococcin (<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431000">BBa_K2431000</a>)
+showed slightly lower OD’s than the control at most, if not all, of the promoter and
+MetAP configurations (Figure 1). However, due to the lack of DNA for replicates
+of these AMP reactions, no statistical conclusions could be drawn. In addition,
+for all of the AMPs there was a steady decrease in OD after about 5 hours,
+leading to widely varied data points that could not be analyzed. This was likely
+because of the evaporation of the media, due to a lack of a seal on the plate.
+Therefore, the data shown in Figure 1 only includes data points up to that point.
+In order to achieve replicates, we proceeded to do a second killing assay using only
+ISGCock (<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431022">BBa_K2431022</a>),
+BP100 (<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431002">BBa_K2431002</a>),
+and Micrococcin (<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431000">BBa_K2431000</a>).
+Our second assay was run with sealed plates, which helped eliminated cell
+death due to evaporation. However, this assay indicated no difference in cell death
+between AMP reactions and control reactions (Figure 2). The OD’s for all reactions
+were remarkably consistent, indicating that our AMP was most likely not expressed
+at a meaningful level in our reactions.
+</p>
+<p>
+In addition, the control containing only cells had a higher OD in general than
+all reactions containing cell-free buffer components, indicating that any toxicity
+was most likely due to the presence of this buffer. The discrepancy between the
+two killing assays could be due to multiple factors. Firstly, the AMP DNA for
+the second assay was prepared separately from the first assay. Any impurities
+in the final DNA template, such as ethanol or guanidinium may have contributed
+to cell death. Another factor that contribute to this discrepancy was the evaporation
+of the liquid cell cultures. This evaporation could have led to cell death in
+some reactions early on in the time-course, creating the appearance of a toxic AMP.
+In addition, the first assay did not have replicates for the AMP reactions,
+furthering the uncertainty in the effectiveness of the AMPs. In the second assay,
+all AMP reactions were performed in triplicate and were consistently within 95%
+confidence interval of all other reactions, save the cells only control.
+Once again, this points to a lack of sufficient expression of the AMP and a small
+toxic effect due to cell-free buffer conditions.
+</p>
+<br>
+<h3>AMP expressed via PURExpress Plate Based Killing Assay</h3>
+<p>
+In order to determine whether or not it was the AMPs or the cell free expression
+reaction that was ineffective we expressed BP100
+(<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431002">BBa_K2431002</a>)
+and Micrococcin C7
+(<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431000">BBa_K2431000</a>)
+using NEBs PURExpress cell-free protein expression kit using long and short promoters.
+These reactions were then applied to a BL21 E. coli bacterial lawn on LB plates
+at reaction concentration and at a 1:4 dilution. Plates were left to grow overnight at 37C.
+Pictures below show that under both promoters and typically at both dilutions
+both BP100 and Micrococcin C7 are effecitve at killing BL21 E. coli.
+11L and 11S indicate BP100 expressed with the long and short promoters respectively.
+12L and 12S indicate Micrococcin C7 expressed with the long and short promoters
+respectively. “N” indicates the normal undiluted reaction concentration and “D”
+indicates the diluted reaction mixture. No Temp plates were plates dosed with
+control PURExpress reaction without any DNA template added.
+</p>
+<b style="font-size:1.5em">Control: D &amp; N</b>
+<div class="row">
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/2/28/T--NortheasternU-Boston--PlateControl1.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/f/ff/T--NortheasternU-Boston--PlateControl2.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+</div>
+
+<br>
+
+<b style="font-size:1.5em">Part 11: BP100
+(<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431002">BBa_K2431002</a>)</b>
+<div class="row">
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/5/51/T--NortheasternU-Boston--11SN.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/e/e9/T--NortheasternU-Boston--11SD.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/6/6f/T--NortheasternU-Boston--11LN.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/9/93/T--NortheasternU-Boston--11LD.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+</div>
+
+<br>
+
+<b style="font-size:1.5em">Part 12: Micrococcin C7
+(<a target="_blank"  href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2431000">BBa_K2431000</a>)</b>
+<div class="row">
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/7/75/T--NortheasternU-Boston--12SN.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/5/59/T--NortheasternU-Boston--12SD.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/d/de/T--NortheasternU-Boston--12LN.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+  <div class="col-xs-6" style="display:block;text-align:center">
+    <img src="http://2017.igem.org/wiki/images/5/51/T--NortheasternU-Boston--12LD.png"
+    height="300px" style="margin:10px"></img>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('./footer.tpl.html')
+  </div>
+</body>

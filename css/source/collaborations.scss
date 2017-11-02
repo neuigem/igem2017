@@ -1,0 +1,40 @@
+@import 'global.scss';
+
+.collaborations-page {
+  .header {
+    //background-color: $c_blue;
+    padding: 20px;
+    margin: 0;
+    margin-top: 10px;
+    //box-shadow: $shadow1;
+    //text-align: center;
+    h2 {
+      //color: #FFF;
+      color: #000;
+      margin: 0;
+    }
+  }
+  .collaborations-panel {
+    background-color: #FFF;
+    padding: 10px 20px;
+    margin: 10px;
+    box-shadow: $shadow1;
+    h3 {
+      margin: auto 0;
+    }
+    p {
+      border-top: 1px dashed #AAA;
+      padding-top: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .collab-section-header {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      //border-top: 1px dashed #AAA;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

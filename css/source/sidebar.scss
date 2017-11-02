@@ -14,6 +14,7 @@
   .neu-logo-row {
     padding: 0px;
     background-color: #FFF;
+    padding-top: 5px;
     .neu-logo-link-container {
       padding: 15px 15px;
       a.neu-logo-link {
@@ -34,11 +35,11 @@
     padding: 10px 15px;
     span.banner-title {
       color: #FFF;
-      font-size: 2em;
+      font-size: 1.5em;
     }
     span.banner-subtitle {
       color: #FFF;
-      font-size: 1.25em;
+      font-size: 1em;
     }
   }
 
@@ -89,6 +90,7 @@
           list-style: none;
           padding: 0px 0px;
           border-top: 1px solid rgba(255,255,255,0.1);
+          margin: 0;
           li {
             display: flex;
             flex-direction: row;
@@ -99,7 +101,7 @@
             }
             a {
               width: 100%;
-              padding: 10px 20px;
+              padding: 5px 20px;
               color: #EEE;
               &:hover, &:focus {
                 background-color: #EEE;

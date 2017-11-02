@@ -9,3 +9,9 @@ node_modules
 public/css/*.css
 public/*.html
 
+# images
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg

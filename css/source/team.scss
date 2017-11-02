@@ -1,0 +1,48 @@
+@import 'global.scss';
+
+.team-page {
+  .team-header {
+    //background-color: $c_blue;
+    padding: 20px;
+    margin: 0;
+    margin-top: 10px;
+    //box-shadow: $shadow1;
+    text-align: center;
+    h2.team-title {
+      //color: #FFF;
+      color: #000;
+      margin: 0;
+    }
+  }
+  ul.team-list {
+    margin: 0;
+    padding: 10px 15px;
+    //font-size: 0.75em;
+    li.member-item {
+      box-shadow: $shadow1;
+      padding: 10px;
+      //padding-top: 0px;
+      margin-bottom: 15px;
+      background-color: #FFF;
+      .member-image-container {
+        img.member-image {
+          width: 100%;
+        }
+      }
+      .member-desc-col {
+        h4.member-name {
+          margin: 0;
+          margin-bottom: 5px;
+          padding-bottom: 5px;
+          border-bottom: 1px dashed #AAA;
+          font-size: 1.5em;
+        }
+        .desc-key {
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

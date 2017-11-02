@@ -1,0 +1,29 @@
+.parts-page {
+  table.parts-table {
+    background-color: #FFF;
+    //font-size: 0.75em;
+    margin-bottom: 20px;
+    tr.header {
+      th {
+        background-color: #666;
+        color: #FFF;
+        padding: 10px;
+        //font-size: 1.25em;
+      }
+    }
+    tr {
+      td {
+        padding: 10px;
+      }
+      td.name {
+        a {
+          font-style: italic;
+          font-weight: bold;
+        }
+      }
+    }
+    tr.assay-amp {
+      background-color: lighten(#F00, 45%);
+    }
+  }
+}

@@ -5,6 +5,13 @@
 @import 'home.scss';
 @import 'sidebar.scss';
 @import 'footer.scss';
+@import 'abstract.scss';
+@import 'team.scss';
+@import 'collaborations.scss';
+@import 'notebook.scss';
+@import 'parts.scss';
+@import 'results.scss';
+@import 'basic.scss';
 
 
 /***************************************************** DEFAULT WIKI SETTINGS  ****************************************************/
@@ -14,7 +21,7 @@
 	#home_logo, #sideMenu { display:none; }
 	#sideMenu, #top_title, .patrollink  {display:none;}
 	#content { width:100%; padding:0px;  margin-top:-7px; margin-left:0px;}
-	body {background-color:white; }
+	body {background-color:#EEE; }
 	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
 
 
@@ -38,22 +45,34 @@
     width: auto !important;
     margin: 0 !important;
     float: none !important;
-    font-size: 0.75em;
+    //font-size: 0.75em;
+    line-height: normal !important;
+    background-color: #EEE;
 	}
   h1 {
-    display: none !important;
+    //display: none !important;
   }
 
 
 	/* special class that the system uses to make sure the team wants a page to be evaluated */
 	.judges-will-not-evaluate {
-    	width: 96.6%;
-  		margin: 5px 15px;
-  		display: block;
+    width: 96.6%;
+  	margin: 5px 15px;
+  	display: block;
 		border: 4px solid #3399ff;
-    	font-weight: bold;
+    font-weight: bold;
 	}
 
   p {
     margin: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+
+  }
+  .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
   }
